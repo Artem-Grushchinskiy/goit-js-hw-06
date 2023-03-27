@@ -6,7 +6,8 @@ function newTextSub(elem) {
   const { email, password } = elem.currentTarget.elements;
 
   if (!email.value.trim() || !password.value.trim()) {
-    return alert("Please fill in all the fields!");
+    alert("Да пребудет с тобой сила, введи свой email и password");
+    return;
   } else {
     const formData = {
       email: email.value,

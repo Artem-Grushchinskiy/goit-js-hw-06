@@ -15,5 +15,5 @@ const newVegItem = ingredients.map((el) => {
   return vegsItem;
 });
 console.dir(newVegItem);
-newVeg.append(newVegItem);
+newVeg.append(...newVegItem);
 console.log(newVeg);

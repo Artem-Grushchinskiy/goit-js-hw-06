@@ -1,7 +1,6 @@
-const inputEl = document.querySelector("#font-size-control");
-const spanTextEl = document.querySelector("#text");
+const inputEl = document.querySelector("input#font-size-control");
+const spanTextEl = document.querySelector("span#text");
 
-const permanentChange = () => {
-  spanTextEl.style.fontSize = `${inputEl.value}px`;
-};
-inputEl.addEventListener("input", permanentChange);
+inputEl.addEventListener("input", (permanentChange) => {
+  spanTextEl.style.fontSize = `${permanentChange.target.value}px`;
+});
